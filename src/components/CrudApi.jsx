@@ -5,7 +5,9 @@ import CrudTable from "./CrudTable";
 import { helpHttp } from "../helpers/helpHttp";
 import Loader from "./Loader";
 import Message from "./Message";
-import { IconPokeball } from "@tabler/icons-react";
+
+
+
 
 const CrudApi = () => {
     const [db, setDb] = useState(null);
@@ -14,7 +16,7 @@ const CrudApi = () => {
     const [loading, setLoading] = useState(false);
 
     let api = helpHttp();
-    let url = "http://localhost:5000/pokemon";
+    let url = "http://localhost:5000/jugadores";
 
     useEffect(() => {
         setLoading(true);
@@ -99,10 +101,8 @@ const CrudApi = () => {
 
     return (
         <div className="divCrudApp">
-        <h1>CRUD Pókemon</h1>
-        <div className="divIconPokeball">
-            <IconPokeball size={48} />
-        </div>
+        <h1>Fútbol DT</h1>
+        <i id="iconoPelota" className="fa-regular fa-futbol"></i>
         <CrudForm
             createData={createData}
             updateData={updateData}

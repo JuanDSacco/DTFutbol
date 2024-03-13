@@ -11,7 +11,7 @@ const CrudTable = ({ data, setDataToEdit, deleteData }) => {
             <thead>
             <tr className="trCrudTable">
                 <th>Nombre</th>
-                <th>Tipo</th>
+                <th>Posición</th>
                 <th>Acciones</th>
             </tr>
             </thead>

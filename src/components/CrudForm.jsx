@@ -4,7 +4,7 @@ import {IconUserPlus,IconX} from '@tabler/icons-react'
 
 const initialForm = {
     nombre:'',
-    tipo:'',
+    posicion:'',
     id:null
 }
 
@@ -32,7 +32,7 @@ const CrudForm = ({createData,updateData,dataToEdit,setDataToEdit}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!form.name && !form.tipo){
+        if (!form.name && !form.posicion){
             alert('Datos Incompletos')
             return
         }
@@ -55,7 +55,7 @@ const CrudForm = ({createData,updateData,dataToEdit,setDataToEdit}) => {
             <h3>{dataToEdit ? "Editar" : "Agregar" }</h3>
             <form onSubmit={handleSubmit}>
                 <input onChange={handleChange} value={form.nombre} type="text" name="nombre" placeholder='Nombre'/>
-                <input onChange={handleChange} value={form.tipo} type="text" name="tipo" placeholder='Tipo'/>
+                <input onChange={handleChange} value={form.posicion} type="text" name="posicion" placeholder='Posición'/>
                 <button className='inputSendReset' ><IconUserPlus/></button>
                 <button className='inputSendReset' onClick={handleReset}><IconX/></button>
             </form>
