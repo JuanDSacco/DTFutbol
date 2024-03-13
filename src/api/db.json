@@ -1,0 +1,29 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "nombre": "Pikachu",
+      "tipo": "Eléctrico"
+    },
+    {
+      "id": 2,
+      "nombre": "Charmander",
+      "tipo": "Fuego"
+    },
+    {
+      "id": 3,
+      "nombre": "Bulbasaur",
+      "tipo": "Planta"
+    },
+    {
+      "id": 4,
+      "nombre": "Squirtle",
+      "tipo": "Agua"
+    },
+    {
+      "nombre": "Charizard",
+      "tipo": "Fuego",
+      "id": 1695847124234
+    }
+  ]
+}
